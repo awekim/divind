@@ -21,7 +21,7 @@ EPO10_IPC_EP<-as.data.frame(read.csv("./EPO10_IPC_EP.csv",header=TRUE))
 save(EPO10_IPC_EP,file="./EPO10_IPC_EP.rdt")
 load(file="./EPO10_IPC_EP.rdt")
 head(EPO10_IPC_EP)
-# settting time period: 1995년 이상부터 2015년까지
+# settting time period: 1995 ~ 2015
 EPO10_IPC_EP.01 %>% filter (appln_filing_year >=1995 & $appln_filing_year<=2015)
 
 # checking data set
